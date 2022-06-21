@@ -1,0 +1,7 @@
+Устанавливаем FastApi
+
+pip install fastapi
+
+Установите uvicorn для работы в качестве сервера:
+
+pip install uvicorn
