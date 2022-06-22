@@ -5,3 +5,11 @@ pip install fastapi
 Установите uvicorn для работы в качестве сервера:
 
 pip install uvicorn
+
+Устанавливаем SQLAlchemy для работы с БД
+
+pip install sqlalchemy
+
+
+
+PostgreSQL 14.4
