@@ -1,15 +1,28 @@
 Устанавливаем FastApi
-
 pip install fastapi
 
 Установите uvicorn для работы в качестве сервера:
-
 pip install uvicorn
 
-Устанавливаем SQLAlchemy для работы с БД
-
+Устанавливаем SQLAlchemy для работы с БД:
 pip install sqlalchemy
 
+Устанавливаем Alembic для создания миграций:
+pip install alembic
 
+Устанавливаем psycopg2 для работы с PostgreSQL
+pip install psycopg2-binary
+
+Создаем директорию для будущих миграций
+alembic init alembic
+
+Создаем файл миграции
+alembic revision --autogenerate -m "Init tables"
+
+Выполнить миграцию таблиц в БД командой
+alembic upgrade head
+
+Запустить проект
+uvicorn main:app --reload
 
 PostgreSQL 14.4

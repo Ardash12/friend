@@ -5,7 +5,7 @@ from datetime import date
 class BasicRegister(BaseModel):
     """Схема регистрации пользователя"""
 
-    id: int
+    # id: int
     phone: str
     login: str
     name: str
