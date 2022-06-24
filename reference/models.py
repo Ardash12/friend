@@ -2,7 +2,7 @@ from sqlalchemy import Column, String, Integer, DateTime, Date
 from core.db import Base
 
 
-class Reference(Base):
+class Users(Base):
     """Модели для создания таблицы в БД"""
 
     __tablename__ = 'users'

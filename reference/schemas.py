@@ -2,10 +2,17 @@ from pydantic import BaseModel
 from datetime import date
 
 
+class UserId(BaseModel):
+    name: str
+
+    class Config:
+        orm_mode = True
+
+
 class BasicRegister(BaseModel):
     """Схема регистрации пользователя"""
 
-    # id: int
+    id: int
     phone: str
     login: str
     name: str
